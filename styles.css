@@ -5,8 +5,8 @@
   --text: #111111;
   --muted: #6b6b6b;
   --line: rgba(0, 0, 0, 0.08);
-  --accent: #ff6a00;
-  --accent-hover: #e85f00;
+  --accent: #F3F5F4;
+  --accent-hover: #C0E62C;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   --radius: 24px;
   --radius-sm: 16px;
@@ -107,7 +107,7 @@ a {
 
 .btn-primary {
   background: var(--accent);
-  color: white;
+  color: #212121;
 }
 
 .btn-primary:hover {
@@ -157,15 +157,18 @@ a {
 }
 
 .logo {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-family: "benton-modern-display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  padding: 0px 0px 0 24px;
   letter-spacing: -0.03em;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 6px;
 }
 
 .nav a {
@@ -189,10 +192,10 @@ a {
 /* Hero */
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 24px;
+  grid-template-columns: 1fr ;
+  gap: 16px;
   align-items: stretch;
-  padding: 48px 0 24px;
+  padding: 8px 0 24px;
 }
 
 .hero-content {
@@ -200,10 +203,13 @@ a {
 }
 
 .hero-content h1 {
-  font-size: clamp(2.4rem, 6vw, 5rem);
-  line-height: 0.95;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1;
   letter-spacing: -0.06em;
-  max-width: 10ch;
+  max-width: 100%;
+  text-align: center;
+  
 }
 
 .hero-text {
@@ -216,6 +222,7 @@ a {
 
 .hero-actions {
   display: flex;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 26px;
@@ -377,6 +384,8 @@ a {
 
   .hero-content h1 {
     max-width: 100%;
+    text-align: center;
+    
   }
 
   .about-grid,
@@ -408,6 +417,7 @@ a {
   .contact-box,
   .hero-content {
     padding: 22px;
+   
   }
 
   .hero-image {
@@ -753,9 +763,9 @@ a {
 
 /* FEATURED PROJECTS */
 .featured-projects {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
-  gap: 28px;
+  gap: 16px;
 }
 
 .featured-project {
@@ -763,7 +773,7 @@ a {
   min-width: 0;
   text-decoration: none;
   color: inherit;
-  background: #eceae6;
+  background: #F3F5F4;
   border-radius: 30px;
   padding: 12px 12px 16px;
   box-shadow:
@@ -772,15 +782,15 @@ a {
   transition:
     transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 420ms cubic-bezier(0.22, 1, 0.36, 1),
-    background-color 420ms cubic-bezier(0.22, 1, 0.36, 1);
+    background-color 420ms cubic-bezier(0.22, 1, 0.36, 1); */
   will-change: transform;
 }
 
 .featured-project:hover {
-  transform: translateY(-6px);
+  transform: translateY(-6px); 
   box-shadow:
     0 18px 42px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    0 1px 0 rgba(255, 255, 255, 0.7); 
 }
 
 .featured-project-media {

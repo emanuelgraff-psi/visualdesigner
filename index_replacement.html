@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emanuel Graff | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#" class="logo">Emanuel Graff</a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+
+      <nav class="nav" id="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-socials">
+        <a href="#" class="social-chip">Twitter</a>
+        <a href="#" class="social-chip">LinkedIn</a>
+        <a href="#" class="social-chip">Behance</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="about">
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio / Designer / Creative</p>
+        <h1>Clean digital experiences with a minimal visual approach.</h1>
+        <p class="hero-text">
+          Product, brand, and interface design focused on clarity, utility, and strong visual direction.
+        </p>
+
+        <div class="hero-meta">
+          <span>Based in New Zealand</span>
+          <span>Available for freelance</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Featured projects</h2>
+      </div>
+
+      <div class="featured-projects">
+        <a href="project-branding.html" class="featured-project">
+          <div class="featured-project-media">
+            <img src="media/likemotion.gif" alt="Like Contábil branding project preview" />
+          </div>
+
+          <div class="featured-project-info">
+            <div class="featured-project-pill">
+              <div class="featured-project-icon">
+                <img src="images/like-laranja-52px.png" alt="Like Contábil logo" />
+              </div>
+              <span class="featured-project-title">Like Contábil Branding</span>
+              <span class="featured-project-arrow" aria-hidden="true">
+                <img src="media/arrow-featured-project.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="project-app.html" class="featured-project">
+          <div class="featured-project-media">
+            <img src="images/project-2.jpg" alt="Travel Exchange app project preview" />
+          </div>
+
+          <div class="featured-project-info">
+            <div class="featured-project-pill">
+              <div class="featured-project-icon">
+                <img src="images/project-logo-2.png" alt="Travel Exchange logo" />
+              </div>
+              <span class="featured-project-title">Travel Exchange App</span>
+              <span class="featured-project-arrow" aria-hidden="true">
+                <img src="media/arrow-featured-project.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="project-web.html" class="featured-project">
+          <div class="featured-project-media">
+            <img src="images/project-3.jpg" alt="Minimal Studio website project preview" />
+          </div>
+
+          <div class="featured-project-info">
+            <div class="featured-project-pill">
+              <div class="featured-project-icon">
+                <img src="images/project-logo-3.png" alt="Minimal Studio logo" />
+              </div>
+              <span class="featured-project-title">Minimal Studio Website</span>
+              <span class="featured-project-arrow" aria-hidden="true">
+                <img src="media/arrow-featured-project.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="services" class="section container services-preview">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>What I do</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="card">
+          <h3>UI/UX Design</h3>
+          <p>User flows, interface systems, wireframes, and product direction.</p>
+        </article>
+
+        <article class="card">
+          <h3>Branding</h3>
+          <p>Identity design, communication assets, and visual systems.</p>
+        </article>
+
+        <article class="card">
+          <h3>Web Design</h3>
+          <p>Responsive portfolio sites, landing pages, and digital experiences.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-preview">
+      <div class="contact-box">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s work together</h2>
+          <p>Email, LinkedIn, or any preferred contact method can go here.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:your@email.com" class="btn btn-primary">Email Me</a>
+          <a href="#" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2026 Emanuel Graff. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
