@@ -213,9 +213,10 @@ a {
   padding: 40px;
   align-content: center;
 
-  background: linear-gradient(-45deg, #77ad21, #C0E62C, #69991c, #c3ec1c);
-  background-size: 400% 400%;
-  animation: gradient 8s ease infinite;
+  /* background: linear-gradient(-45deg, #77ad21, #C0E62C, #69991c, #c3ec1c); */
+  background: linear-gradient(-45deg, #a5c526,#C0E62C, #87cbff, #a2fffa);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -820,7 +821,7 @@ a {
 }
 
 .featured-project:hover {
-  /* transform: translateY(-2px);  */
+  transform: translateY(-2px);  
   background: var(--gradiente-1, linear-gradient(180deg, #C0E62C 0%, #F3F5F4 100%));
   box-shadow:
     0 18px 42px rgba(0, 0, 0, 0.08),
@@ -857,9 +858,9 @@ a {
 .featured-project-pill {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   max-width: 100%;
-  padding: 10px 10px 10px 10px;
+  padding: 6px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow:
@@ -885,8 +886,8 @@ a {
 }
 
 .featured-project-icon {
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   border-radius: 999px;
   overflow: hidden;
   flex-shrink: 0;
@@ -904,9 +905,9 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 0.95rem;
+  font-size: 12px;
   font-weight: 600;
-  color: #1b1b1b;
+  color: #212121;
 }
 
 .featured-project-arrow {
@@ -953,6 +954,8 @@ a {
    gradually move toward square cards */
 @media (max-width: 820px) {
   .featured-project {
+    
+    grid-row: inherit;
     border-radius: 28px;
     padding: 12px 12px 16px;
   }
