@@ -816,9 +816,13 @@ a {
   transition:
     transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 420ms cubic-bezier(0.22, 1, 0.36, 1),
-    background-color 420ms cubic-bezier(0.22, 1, 0.36, 1); */
+    background-color 420ms cubic-bezier(0.22, 1, 0.36, 1);
   will-change: transform;
   
+}
+
+.featured-project:hover {
+  transform: rotate(1.5deg);
 }
 
 .featured-project::before {
@@ -834,7 +838,7 @@ a {
 }
 
 .featured-project:hover::before {
-  /* transform: translateY(-2px);   */
+  /* transform: translateY(-2px); */
   /* background: var(--gradiente-1, linear-gradient(180deg, #C0E62C 0%, #F3F5F4 100%)); */
   opacity: 1;
   
@@ -846,7 +850,6 @@ a {
   background: transparent;
   aspect-ratio: 16 / 9;
   height: auto;
-
 }
 
 .featured-project-media img {
@@ -942,7 +945,7 @@ a {
 }
 
 .featured-project:hover .featured-project-arrow {
-  width: 18px;
+  width: 16px;
   opacity: 1;
   transform: translateX(0);
 }
