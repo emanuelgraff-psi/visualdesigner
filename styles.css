@@ -316,7 +316,7 @@ a {
 
 .marquee-text {
   font-family: "fuuld", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   font-style: normal;
   font-size: 0.78rem;
@@ -1180,7 +1180,7 @@ a {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   line-height: 1.1;
   letter-spacing: 0.0em;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -1190,10 +1190,11 @@ a {
 }
 
 .case-body p {
+  font-family: "basic-sans"
   text-align: center;
   color: var(--muted);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
