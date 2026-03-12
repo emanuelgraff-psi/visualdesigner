@@ -2,7 +2,7 @@
   --bg: #fff;
   --surface: rgba(255, 255, 255, 0.58);
   --surface-strong: rgba(255, 255, 255, 0.72);
-  --text: #111111;
+  --text: #2e2e2e;
   --muted: #6b6b6b;
   --line: rgba(0, 0, 0, 0.08);
   --accent: #F3F5F4;
@@ -11,20 +11,24 @@
   --radius: 24px;
   --radius-sm: 16px;
   --max-width: 1180px;
+  
 }
 
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
+  
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  
+  font-family: "Pacaembu", sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -42,7 +46,8 @@ a {
 }
 
 .container {
-  padding: 16px 0 16px 0;
+  
+  padding: 0px 0 0px 0;
   width: min(92%, var(--max-width));
   margin: 0 auto;
 }
@@ -62,6 +67,7 @@ a {
 }
 
 .eyebrow {
+  text-align: center;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -178,7 +184,7 @@ a {
 
 .nav a {
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .nav a:hover {
@@ -470,7 +476,7 @@ a {
 
   .nav .btn {
     padding: 8px 16px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .hero-content {
@@ -526,6 +532,29 @@ a {
   .contact-actions {
     width: 100%;
   }
+}
+
+/* Page top gradient */
+.page-top-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(to bottom, rgba(3, 242, 250, 0.247) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page-top-gradient-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  background: linear-gradient(to bottom, rgba(250, 32, 3, 0.247) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* PROJECT PAGES */
@@ -859,6 +888,7 @@ a {
 .featured-projects {
   display: flex;
   gap: 16px;
+  padding-top: 16px;
 }
 
 .featured-project {
@@ -969,7 +999,7 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 300;
   color: #212121;
 }
 
@@ -1032,7 +1062,7 @@ a {
   font-size: 32px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   max-width: 100%;
   
   text-align: center;
@@ -1070,24 +1100,27 @@ a {
 
 .case-hero {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 40px 0 56px;
   max-width: 720px;
   margin: 0 auto;
 }
 
 .case-hero-title {
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-family: "Benton Modern Display", serif;
+  font-style: italic;
+  font-size: clamp(64px, 5vw, 74px);
+  font-weight: 300;
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   margin-bottom: 18px;
 }
 
 .case-hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 16px;
   color: var(--muted);
   max-width: 55ch;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 /* Cover */
@@ -1132,6 +1165,7 @@ a {
 
 /* Content sections */
 .case-section {
+  /* padding: 64px; */
   margin-bottom: 56px;
 }
 
@@ -1146,16 +1180,19 @@ a {
   line-height: 1.1;
   letter-spacing: 0.0em;
   font-weight: 300;
+  text-align: center;
 }
 
 .case-body {
   max-width: 680px;
-  
+  margin: 0 auto;
+}
 
 .case-body p {
+  text-align: center;
   color: var(--muted);
   font-size: 12pxrem;
-  font-weight: 400;
+  font-weight: 250;
   line-height: 1.4;
 }
 
@@ -1301,5 +1338,78 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .case-body {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   INSIGHT ITEM
+   ======================================== */
+
+.insight-item {
+  max-width: 800px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: var(--radius-sm);
+}
+
+.insight-item-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-top: 0px;
+}
+
+.insight-item-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.insight-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.5;
+}
+
+/* Red variant */
+.insight-item--red {
+  background: #fff0f0;
+}
+.insight-item--red .insight-item-icon svg {
+  fill: #c0393b;
+  color: #c0393b;
+}
+.insight-item--red .insight-item-text {
+  color: #8c2020;
+}
+
+/* Yellow variant */
+.insight-item--yellow {
+  background: #fffbeb;
+}
+.insight-item--yellow .insight-item-icon svg {
+  fill: #b08000;
+  color: #b08000;
+}
+.insight-item--yellow .insight-item-text {
+  color: #7a5c00;
+}
+
+/* Surface variant */
+.insight-item--surface {
+  background: var(--accent);
+}
+.insight-item--surface .insight-item-icon svg {
+  fill: var(--muted);
+  color: var(--muted);
+}
+.insight-item--surface .insight-item-text {
+  color: var(--text);
 }
 
