@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let lastScrollY = window.scrollY;
   let scrollStartY = window.scrollY;
   const header = document.querySelector('.site-header');
-  const scrollThreshold = 50; // Pixels to scroll up before showing header
+  const scrollThreshold = 100; // Pixels to scroll up before showing header
 
   if (header) {
     window.addEventListener('scroll', () => {
