@@ -33,7 +33,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  padding: 0 0 64px 0;
+  padding: 90px 0 64px 0;
 }
 
 img {
@@ -163,9 +163,7 @@ a {
 }
 
 /* Add spacing to account for fixed header */
-body {
-  padding-top: 90px; /* Adjust this value based on your header height */
-}
+
 
 .header-wrap {
   border-radius: 42px;
@@ -1044,6 +1042,10 @@ body {
 /* Mobile: stack vertically */
 @media (max-width: 640px) {
   
+  body {
+    padding-top: 128px;
+  }
+
   .header-wrap {
   border-radius: 22px;
   display: flex;
@@ -1051,11 +1053,7 @@ body {
   justify-content: space-between;
   gap: 20px;
   padding: 12px 12px 12px 12px;
-  background-color: rgba(243, 245, 244, 0.5);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
   .logo {
