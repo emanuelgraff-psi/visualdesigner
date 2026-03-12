@@ -1080,6 +1080,7 @@ a {
   }
 
   .featured-project-media {
+    height: 360px;
     border-radius: 30px;
   }
 
