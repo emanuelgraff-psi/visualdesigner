@@ -27,8 +27,9 @@ html {
 }
 
 body {
-  
-  font-family: "Pacaembu", sans-serif;
+  font-family: "basic-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal ;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -168,12 +169,12 @@ a {
 }
 
 .logo {
-  font-family: "benton-modern-display", serif;
+  font-family: "source-serif-4", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 22px;
   padding: 0px 0px 0 24px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
 }
 
 .nav {
@@ -1049,7 +1050,7 @@ a {
   font-family: "benton-modern-display", serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 26px;
+  font-size: 22x;
   padding: 0px 0px 0 24px;
   letter-spacing: -0.03em;
 }
@@ -1106,10 +1107,10 @@ a {
 }
 
 .case-hero-title {
-  font-family: "Benton Modern Display", serif;
+  font-family: "source-serif-4", serif;
   font-style: italic;
   font-size: clamp(64px, 5vw, 74px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   letter-spacing: -0.03em;
   margin-bottom: 18px;
@@ -1174,7 +1175,7 @@ a {
 }
 
 .case-section-header h2 {
-  font-family: "Benton Modern Display", serif;
+  font-family: "source-serif-4", serif;
   font-style: italic;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   line-height: 1.1;
@@ -1191,9 +1192,10 @@ a {
 .case-body p {
   text-align: center;
   color: var(--muted);
-  font-size: 12pxrem;
-  font-weight: 250;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 /* Problem / Takeaway cards */
