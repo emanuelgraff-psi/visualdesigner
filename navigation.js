@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Scroll direction navigation
   let lastScrollY = window.scrollY;
+  let scrollStartY = window.scrollY;
   const header = document.querySelector('.site-header');
+  const scrollThreshold = 50; // Pixels to scroll up before showing header
 
   if (header) {
     window.addEventListener('scroll', () => {
@@ -21,15 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (currentScrollY < 100) {
         header.classList.remove('hidden');
         lastScrollY = currentScrollY;
+        scrollStartY = currentScrollY;
         return;
       }
       
       if (currentScrollY > lastScrollY) {
-        // Scrolling down - hide header
+        // Scrolling down - hide header and reset scroll start point
         header.classList.add('hidden');
+        scrollStartY = currentScrollY;
+        if (window.headerShowTimeout) {
+          clearTimeout(window.headerShowTimeout);
+        }
       } else {
-        // Scrolling up - show header
-        header.classList.remove('hidden');
+        // Scrolling up - only show header after scrolling up enough
+        const scrollUpDistance = scrollStartY - currentScrollY;
+        
+        if (scrollUpDistance >= scrollThreshold) {
+          header.classList.remove('hidden');
+        }
       }
       
       lastScrollY = currentScrollY;
