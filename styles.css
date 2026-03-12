@@ -10,7 +10,7 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   --radius: 24px;
   --radius-sm: 16px;
-  --max-width: 1600px;
+  --max-width: 1400px;
   
 }
 
@@ -107,7 +107,7 @@ a {
   border-radius: 999px;
   font-weight: 600;
   transition: 0.2s ease;
-  border: 1px solid transparent;
+  
 }
 
 .btn:hover {
@@ -115,8 +115,8 @@ a {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #212121;
+  background: #2e2e2e;
+  /* color: #212121; */
 }
 
 .btn-primary:hover {
@@ -149,11 +149,22 @@ a {
 
 /* Header */
 .site-header {
-  
   padding: 18px 0 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 30;
+  transition: transform 0.3s ease-in-out;
+}
+
+.site-header.hidden {
+  transform: translateY(-100%);
+}
+
+/* Add spacing to account for fixed header */
+body {
+  padding-top: 90px; /* Adjust this value based on your header height */
 }
 
 .header-wrap {
@@ -164,9 +175,9 @@ a {
   gap: 20px;
   border-radius: 16px;
   padding: 16px 24px 16px 24px;
-  background-color: rgba(243, 245, 244, 0.5);
+  /* background-color: rgba(243, 245, 244, 0.5);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); */
 }
 
 .logo {
@@ -185,7 +196,7 @@ a {
 }
 
 .nav a {
-  color: var(--muted);
+  color: #ffffff;
   font-weight: 300;
 }
 
