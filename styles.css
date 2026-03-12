@@ -316,7 +316,7 @@ a {
 
 .marquee-text {
   font-family: "fuuld", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   font-style: normal;
   font-size: 0.78rem;
@@ -1038,7 +1038,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 12px 24px 12px 12px;
+  padding: 12px 12px 12px 12px;
   background-color: rgba(243, 245, 244, 0.5);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   
@@ -1047,11 +1047,11 @@ a {
 }
 
   .logo {
-  font-family: "benton-modern-display", serif;
+  font-family: "source-serif-4", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 22x;
-  padding: 0px 0px 0 24px;
+  padding: 0px 0px 0 0px;
   letter-spacing: -0.03em;
 }
 
@@ -1190,13 +1190,13 @@ a {
 }
 
 .case-body p {
-  font-family: "basic-sans"
+  font-family: "basic-sans";
   text-align: center;
   color: var(--muted);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 /* Problem / Takeaway cards */
