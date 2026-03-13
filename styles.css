@@ -10,7 +10,7 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   --radius: 24px;
   --radius-sm: 16px;
-  --max-width: 1400px;
+  --max-width: 1100px;
   
 }
 
@@ -48,7 +48,7 @@ a {
 }
 
 .container {
-  
+
   padding: 0px 0 0px 0;
   width: min(92%, var(--max-width));
   margin: 0 auto;
