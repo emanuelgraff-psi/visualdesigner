@@ -1141,7 +1141,8 @@ a {
   margin-bottom: 32px;
 }
 
-.case-cover img {
+.case-cover img,
+.case-cover video {
   width: 100%;
   border-radius: var(--radius);
   object-fit: cover;
