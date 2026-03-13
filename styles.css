@@ -1368,7 +1368,6 @@ a {
    ======================================== */
 
 .insight-item {
-  max-width: 800px;
   display: flex;
   align-items: flex-start;
   gap: 12px;
