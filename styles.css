@@ -11,7 +11,52 @@
   --radius: 24px;
   --radius-sm: 16px;
   --max-width: 1100px;
-  
+  --bullet-color: #7db5c4;
+}
+
+/* Obsidian-style bullet list wrapper */
+.bullet-list {
+  position: relative;
+  padding-left: 0;
+}
+
+.bullet-list::before {
+  content: "";
+  position: absolute;
+  left: 0.35em;
+  top: 0.6em;
+  bottom: 0.6em;
+  width: 1px;
+  background-color: var(--bullet-color);
+  opacity: 0.4;
+}
+
+/* Obsidian-style bullet paragraph */
+.bullet-item {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.bullet-item::before {
+  content: "◦";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  color: var(--bullet-color);
+  font-size: 1.1em;
+  line-height: 1;
+}
+
+.bullet-item strong {
+  font-weight: 700;
+}
+
+.bullet-item .highlight {
+  color: var(--bullet-color);
 }
 
 * {
