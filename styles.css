@@ -161,7 +161,7 @@ a {
 
 .btn-primary {
   background: #2e2e2e;
-  /* color: #212121; */
+  color: #f4f4f4;
 }
 
 .btn-primary:hover {
@@ -201,6 +201,7 @@ a {
   right: 0;
   z-index: 30;
   transition: transform 0.3s ease-in-out;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .site-header.hidden {
