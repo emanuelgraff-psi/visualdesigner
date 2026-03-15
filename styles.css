@@ -219,9 +219,15 @@ a {
   border-radius: 16px;
   padding: 16px 24px 16px 24px;
   /* background-color: rgba(243, 245, 244, 0.5); */
+  transition: backdrop-filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header-wrap.scrolled {
+  background-color: rgba(219, 219, 219, 0.184);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.459), 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: #2121211a 0px 12px 30px, rgba(0, 0, 0, 0.04) 0px 2px 8px;
+  /* box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.459), 0 2px 8px rgba(0, 0, 0, 0.06); */ */
 }
 
 .logo {
@@ -510,8 +516,9 @@ a {
   .header-wrap {
     flex-direction: column;
     align-items: center;
-    padding: 14px 16px;
+    padding: 16px 24px 16px 24px;
     gap: 16px;
+    margin-bottom: 12px;
   }
 
   .logo {
@@ -567,7 +574,7 @@ a {
   }
 
   .header-wrap {
-    padding: 14px 16px;
+    padding: 16px 24px 16px 24px;
   }
 
   .card,
@@ -610,6 +617,17 @@ a {
   width: 100%;
   height: 180px;
   background: linear-gradient(to bottom, rgba(250, 32, 3, 0.247) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page-top-gradient-green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, #04be0e6c 0%, rgba(255, 255, 255, 0) 100%);
   pointer-events: none;
   z-index: -1;
 }

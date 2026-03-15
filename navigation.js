@@ -15,9 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.site-header');
   const scrollThreshold = 100; // Pixels to scroll up before showing header
 
+  const headerWrap = document.querySelector('.header-wrap');
+  
   if (header) {
     window.addEventListener('scroll', () => {
       const currentScrollY = window.scrollY;
+      
+      // Toggle scrolled class based on scroll position
+      if (currentScrollY > 0) {
+        if (headerWrap) headerWrap.classList.add('scrolled');
+      } else {
+        if (headerWrap) headerWrap.classList.remove('scrolled');
+      }
       
       // Don't hide header at the very top of the page
       if (currentScrollY < 100) {
