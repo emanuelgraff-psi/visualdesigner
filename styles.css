@@ -121,6 +121,15 @@ a {
   color: var(--muted);
   margin-bottom: 10px;
 }
+.eyebrow-next-case {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
 
 .glass {
   /* background: var(--surface); */
@@ -1248,6 +1257,7 @@ a {
 .case-section {
   /* padding: 64px; */
   margin-bottom: 56px;
+  margin-top: 56px;
 }
 
 .case-section-header {
