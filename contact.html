@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Emanuel Graff</title>
+  <link rel="stylesheet" href="https://use.typekit.net/cyo2ksv.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <script src="navigation.js"></script>
+</head>
+
+<body>
+
+  <div class="page-top-gradient"></div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="logo">Emanuel Graff</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav">
+        <a href="index.html" class="btn btn-primary">Home</a>
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+        <a href="https://www.linkedin.com/in/emanuelgraff/" class="btn btn-primary">Linkedin</a>
+        <a href="https://www.behance.net/emanuelgraffdot" class="btn btn-primary">Behance</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-page-section container">
+      <div class="contact-page-header">
+        <p class="eyebrow">Contact</p>
+        <h1 class="contact-page-title">Let's work together</h1>
+        <p class="contact-page-subtitle">Have a project in mind? Fill out the form and I'll get back to you.</p>
+      </div>
+
+      <form
+        class="contact-form glass"
+        action="https://formspree.io/f/mvzwwean"
+        method="POST"
+      >
+        <input type="hidden" name="_replyto" value="" />
+
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            class="form-input form-textarea"
+            id="message"
+            name="message"
+            placeholder="Tell me about your project..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
