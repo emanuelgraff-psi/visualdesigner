@@ -159,7 +159,7 @@ a {
   justify-content: center;
   padding: 13px 20px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 300;
   transition: 0.2s ease;
   
 }
@@ -175,6 +175,8 @@ a {
 
 .btn-primary:hover {
   background: var(--accent-hover);
+  color: #252525;
+  
 }
 
 .btn-secondary {
